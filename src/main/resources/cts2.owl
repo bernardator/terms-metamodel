@@ -23,7 +23,6 @@
     <Prefix name="core" IRI="http://www.w3.org/2004/02/skos/core#"/>
     <Prefix name="cts2" IRI="http://www.omg.org/spec/CTS2#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>http://www.w3.org/2004/02/skos/core</Import>
     <Declaration>
         <Class abbreviatedIRI="cts2:CodeSystemCatalog"/>
     </Declaration>

@@ -24,6 +24,7 @@
     <Prefix name="terms" IRI="http://www.drools.org/drools-shapes/terms#"/>
     <Import>http://edu.mayo.cts2/terms-metamodel/omg/spec/CTS2</Import>
     <Import>http://edu.mayo.cts2/terms-metamodel/LMM_L1.owl</Import>
+    <Import>http://edu.mayo.cts2/terms-metamodel/skos/core</Import>
     <Declaration>
         <Class abbreviatedIRI="terms:AtomicConceptDescriptor"/>
     </Declaration>
@@ -169,10 +170,6 @@
         <Class IRI="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression"/>
-        <Class abbreviatedIRI="terms:Symbolic"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://www.omg.org/spec/CTS2#EntityReference"/>
         <Class abbreviatedIRI="terms:Symbolic"/>
     </SubClassOf>
@@ -193,12 +190,16 @@
         <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Meaning"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression"/>
+        <Class abbreviatedIRI="terms:Symbolic"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
         <Class IRI="http://www.omg.org/spec/CTS2#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Meaning"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
