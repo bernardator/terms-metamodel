@@ -217,6 +217,30 @@
         <ObjectProperty abbreviatedIRI="terms:subConceptOf"/>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#broaderTransitive"/>
     </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="terms:defines"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="terms:expresses"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="terms:subConceptOf"/>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="terms:defines"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Meaning"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="terms:expresses"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Meaning"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="terms:subConceptOf"/>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </ObjectPropertyRange>
     <DataPropertyDomain>
         <DataProperty abbreviatedIRI="terms:code"/>
         <Class abbreviatedIRI="terms:ConceptDescriptor"/>
