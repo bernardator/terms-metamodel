@@ -10,7 +10,7 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://edu.mayo.cts2/terms-metamodel/terms"
+     xml:base="http://www.mayo.edu/terms-metamodel/terms"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -21,181 +21,184 @@
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="terms" IRI="http://www.drools.org/drools-shapes/terms#"/>
+    <Prefix name="terms" IRI="http://www.mayo.edu/terms-metamodel/terms#"/>
     <Import>http://edu.mayo.cts2/terms-metamodel/omg/spec/CTS2</Import>
     <Import>http://edu.mayo.cts2/terms-metamodel/LMM_L1.owl</Import>
     <Import>http://edu.mayo.cts2/terms-metamodel/skos/core</Import>
     <Declaration>
-        <Class abbreviatedIRI="terms:AtomicConceptDescriptor"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#AtomicConceptDescriptor"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="terms:CompositeConceptDescriptor"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#CompositeConceptDescriptor"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="terms:ConceptCode"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#ConceptCode"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="terms:ExtensionalConceptDescriptor"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#ExtensionalConceptDescriptor"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="terms:IntensionalConceptDescriptor"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#IntensionalConceptDescriptor"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="terms:MultiTaxonomy"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#MultiTaxonomy"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="terms:Ontology"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#Ontology"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="terms:Symbolic"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#Symbolic"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="terms:Taxonomy"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#Taxonomy"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="terms:Thesaurus"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#Thesaurus"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="terms:Vocabulary"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#Vocabulary"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="terms:defines"/>
+        <ObjectProperty IRI="http://www.mayo.edu/terms-metamodel/terms#defines"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="terms:expresses"/>
+        <ObjectProperty IRI="http://www.mayo.edu/terms-metamodel/terms#expresses"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="terms:subConceptOf"/>
+        <ObjectProperty IRI="http://www.mayo.edu/terms-metamodel/terms#subConceptOf"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="terms:code"/>
+        <ObjectProperty IRI="#drawsFrom"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="terms:codeSystem"/>
+        <DataProperty IRI="http://www.mayo.edu/terms-metamodel/terms#code"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="terms:displayName"/>
+        <DataProperty IRI="http://www.mayo.edu/terms-metamodel/terms#codeSystem"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="terms:uri"/>
+        <DataProperty IRI="http://www.mayo.edu/terms-metamodel/terms#displayName"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="terms:valueSet"/>
+        <DataProperty IRI="http://www.mayo.edu/terms-metamodel/terms#uri"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.mayo.edu/terms-metamodel/terms#valueSet"/>
     </Declaration>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:AtomicConceptDescriptor"/>
-        <Class abbreviatedIRI="terms:ConceptDescriptor"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#AtomicConceptDescriptor"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#ConceptDescriptor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:CompositeConceptDescriptor"/>
-        <Class abbreviatedIRI="terms:ConceptDescriptor"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#CompositeConceptDescriptor"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#ConceptDescriptor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:ConceptCode"/>
-        <Class abbreviatedIRI="terms:ConceptDescriptor"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#ConceptCode"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#ConceptDescriptor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:ConceptCode"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#ConceptCode"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:ConceptDescriptor"/>
-        <Class abbreviatedIRI="terms:Symbolic"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#ConceptDescriptor"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#Symbolic"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:ConceptDescriptor"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#ConceptDescriptor"/>
         <DataExactCardinality cardinality="1">
-            <DataProperty abbreviatedIRI="terms:code"/>
+            <DataProperty IRI="http://www.mayo.edu/terms-metamodel/terms#code"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:ConceptDescriptor"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#ConceptDescriptor"/>
         <DataExactCardinality cardinality="1">
-            <DataProperty abbreviatedIRI="terms:codeSystem"/>
+            <DataProperty IRI="http://www.mayo.edu/terms-metamodel/terms#codeSystem"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:ConceptDescriptor"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#ConceptDescriptor"/>
         <DataMaxCardinality cardinality="1">
-            <DataProperty abbreviatedIRI="terms:displayName"/>
+            <DataProperty IRI="http://www.mayo.edu/terms-metamodel/terms#displayName"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:ConceptDescriptor"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#ConceptDescriptor"/>
         <DataMaxCardinality cardinality="1">
-            <DataProperty abbreviatedIRI="terms:uri"/>
+            <DataProperty IRI="http://www.mayo.edu/terms-metamodel/terms#uri"/>
             <Datatype abbreviatedIRI="xsd:anyURI"/>
         </DataMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:ConceptDescriptor"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#ConceptDescriptor"/>
         <DataMaxCardinality cardinality="1">
-            <DataProperty abbreviatedIRI="terms:valueSet"/>
+            <DataProperty IRI="http://www.mayo.edu/terms-metamodel/terms#valueSet"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:ExtensionalConceptDescriptor"/>
-        <Class abbreviatedIRI="terms:CompositeConceptDescriptor"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#ExtensionalConceptDescriptor"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#CompositeConceptDescriptor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:IntensionalConceptDescriptor"/>
-        <Class abbreviatedIRI="terms:CompositeConceptDescriptor"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#IntensionalConceptDescriptor"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#CompositeConceptDescriptor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:MultiTaxonomy"/>
-        <Class abbreviatedIRI="terms:Taxonomy"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#MultiTaxonomy"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#Taxonomy"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:MultiTaxonomy"/>
-        <Class abbreviatedIRI="terms:Thesaurus"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#MultiTaxonomy"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#Thesaurus"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:Ontology"/>
-        <Class abbreviatedIRI="terms:MultiTaxonomy"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#Ontology"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#MultiTaxonomy"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:Taxonomy"/>
-        <Class abbreviatedIRI="terms:Vocabulary"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#Taxonomy"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#Vocabulary"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:Thesaurus"/>
-        <Class abbreviatedIRI="terms:Vocabulary"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#Thesaurus"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#Vocabulary"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:Vocabulary"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#Vocabulary"/>
         <Class IRI="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.omg.org/spec/CTS2#EntityReference"/>
-        <Class abbreviatedIRI="terms:Symbolic"/>
+        <Class IRI="http://edu.mayo.cts2/terms-metamodel/omg/spec/CTS2#EntityReference"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#Symbolic"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.omg.org/spec/CTS2#NameAndMeaningReference"/>
-        <Class abbreviatedIRI="terms:Symbolic"/>
+        <Class IRI="http://edu.mayo.cts2/terms-metamodel/omg/spec/CTS2#NameAndMeaningReference"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#Symbolic"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.omg.org/spec/CTS2#NameOrURI"/>
-        <Class abbreviatedIRI="terms:Symbolic"/>
+        <Class IRI="http://edu.mayo.cts2/terms-metamodel/omg/spec/CTS2#NameOrURI"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#Symbolic"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.omg.org/spec/CTS2#ValueSet"/>
+        <Class IRI="http://edu.mayo.cts2/terms-metamodel/omg/spec/CTS2#ValueSet"/>
         <Class IRI="http://www.w3.org/2004/02/skos/core#Collection"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.omg.org/spec/CTS2#ValueSetDefinition"/>
+        <Class IRI="http://edu.mayo.cts2/terms-metamodel/omg/spec/CTS2#ValueSetDefinition"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression"/>
-        <Class abbreviatedIRI="terms:Symbolic"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#Symbolic"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <Class IRI="http://www.omg.org/spec/CTS2#Entity"/>
+        <Class IRI="http://edu.mayo.cts2/terms-metamodel/omg/spec/CTS2#Entity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -203,86 +206,70 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-        <Class IRI="http://www.omg.org/spec/CTS2#Entity"/>
+        <Class IRI="http://edu.mayo.cts2/terms-metamodel/omg/spec/CTS2#Entity"/>
     </SubClassOf>
     <SubObjectPropertyOf>
-        <ObjectProperty abbreviatedIRI="terms:defines"/>
+        <ObjectProperty IRI="http://www.mayo.edu/terms-metamodel/terms#defines"/>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#hasInterpretant"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty abbreviatedIRI="terms:expresses"/>
+        <ObjectProperty IRI="http://www.mayo.edu/terms-metamodel/terms#expresses"/>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#hasInterpretant"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty abbreviatedIRI="terms:subConceptOf"/>
+        <ObjectProperty IRI="http://www.mayo.edu/terms-metamodel/terms#subConceptOf"/>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#broaderTransitive"/>
     </SubObjectPropertyOf>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI="terms:defines"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI="terms:expresses"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI="terms:subConceptOf"/>
-        <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <ObjectProperty IRI="#drawsFrom"/>
+        <Class IRI="http://edu.mayo.cts2/terms-metamodel/omg/spec/CTS2#ValueSet"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="terms:defines"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Meaning"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="terms:expresses"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Meaning"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="terms:subConceptOf"/>
-        <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <ObjectProperty IRI="#drawsFrom"/>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="terms:code"/>
-        <Class abbreviatedIRI="terms:ConceptDescriptor"/>
+        <DataProperty IRI="http://www.mayo.edu/terms-metamodel/terms#code"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#ConceptDescriptor"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="terms:codeSystem"/>
-        <Class abbreviatedIRI="terms:ConceptDescriptor"/>
+        <DataProperty IRI="http://www.mayo.edu/terms-metamodel/terms#codeSystem"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#ConceptDescriptor"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="terms:displayName"/>
-        <Class abbreviatedIRI="terms:ConceptDescriptor"/>
+        <DataProperty IRI="http://www.mayo.edu/terms-metamodel/terms#displayName"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#ConceptDescriptor"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="terms:uri"/>
-        <Class abbreviatedIRI="terms:ConceptDescriptor"/>
+        <DataProperty IRI="http://www.mayo.edu/terms-metamodel/terms#uri"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#ConceptDescriptor"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="terms:valueSet"/>
-        <Class abbreviatedIRI="terms:ConceptDescriptor"/>
+        <DataProperty IRI="http://www.mayo.edu/terms-metamodel/terms#valueSet"/>
+        <Class IRI="http://www.mayo.edu/terms-metamodel/terms#ConceptDescriptor"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="http://www.w3.org/2004/02/skos/core#notation"/>
-        <Class IRI="http://www.omg.org/spec/CTS2#Entity"/>
+        <Class IRI="http://edu.mayo.cts2/terms-metamodel/omg/spec/CTS2#Entity"/>
     </DataPropertyDomain>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="terms:code"/>
+        <DataProperty IRI="http://www.mayo.edu/terms-metamodel/terms#code"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="terms:codeSystem"/>
+        <DataProperty IRI="http://www.mayo.edu/terms-metamodel/terms#codeSystem"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="terms:displayName"/>
+        <DataProperty IRI="http://www.mayo.edu/terms-metamodel/terms#displayName"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="terms:uri"/>
+        <DataProperty IRI="http://www.mayo.edu/terms-metamodel/terms#uri"/>
         <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="terms:valueSet"/>
+        <DataProperty IRI="http://www.mayo.edu/terms-metamodel/terms#valueSet"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>

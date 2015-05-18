@@ -15,7 +15,7 @@ public class OntologyTest {
         OWLOntologyManager mgr = OWLManager.createOWLOntologyManager();
         try {
             mgr.loadOntologyFromOntologyDocument( OntologyTest.class.getResourceAsStream( "/lmm_l1.owl" ) );
-            mgr.loadOntologyFromOntologyDocument( OntologyTest.class.getResourceAsStream( "/skos.rdf" ) );
+            mgr.loadOntologyFromOntologyDocument( OntologyTest.class.getResourceAsStream( "/skos.owl" ) );
             mgr.loadOntologyFromOntologyDocument( OntologyTest.class.getResourceAsStream( "/cts2.owl" ) );
             mgr.loadOntologyFromOntologyDocument( OntologyTest.class.getResourceAsStream( "/terms.owl" ) );
         } catch ( OWLOntologyCreationException e ) {
