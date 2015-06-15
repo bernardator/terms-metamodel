@@ -85,6 +85,9 @@
     <Declaration>
         <DataProperty abbreviatedIRI="terms:valueSet"/>
     </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://www.hl7.org/oid"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="http://edu.mayo.cts2/terms-metamodel/omg/spec/CTS2#EntityReference"/>
         <Class abbreviatedIRI="terms:Symbolic"/>
@@ -300,6 +303,10 @@
         <DataProperty IRI="http://www.w3.org/2004/02/skos/core#notation"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="https://www.hl7.org/oid"/>
+        <AbbreviatedIRI>xsd:string</AbbreviatedIRI>
+    </AnnotationPropertyRange>
 </Ontology>
 
 
