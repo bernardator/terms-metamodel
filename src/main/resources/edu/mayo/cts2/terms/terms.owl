@@ -21,7 +21,7 @@
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="terms" IRI="http://www.mayo.edu/terms-metamodel/terms#"/>
+    <Prefix name="terms" IRI="http://edu.mayo.cts2/terms-metamodel/terms#"/>
     <Import>http://edu.mayo.cts2/terms-metamodel/omg/spec/CTS2</Import>
     <Import>http://edu.mayo.cts2/terms-metamodel/LMM_L1.owl</Import>
     <Import>http://edu.mayo.cts2/terms-metamodel/skos/core</Import>
