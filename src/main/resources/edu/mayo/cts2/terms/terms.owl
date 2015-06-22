@@ -26,79 +26,82 @@
     <Import>http://edu.mayo.cts2/terms-metamodel/LMM_L1.owl</Import>
     <Import>http://edu.mayo.cts2/terms-metamodel/skos/core</Import>
     <Declaration>
-        <Class abbreviatedIRI="terms:AtomicConceptDescriptor"/>
+        <Class IRI="#AtomicConceptDescriptor"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="terms:CompositeConceptDescriptor"/>
+        <Class IRI="#CompositeConceptDescriptor"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="terms:ConceptCode"/>
+        <Class IRI="#ConceptCode"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="terms:ExtensionalConceptDescriptor"/>
+        <Class IRI="#ExtensionalConceptDescriptor"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="terms:IntensionalConceptDescriptor"/>
+        <Class IRI="#IntensionalConceptDescriptor"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="terms:MultiTaxonomy"/>
+        <Class IRI="#MultiTaxonomy"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="terms:Ontology"/>
+        <Class IRI="#Ontology"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="terms:Symbolic"/>
+        <Class IRI="#Symbolic"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="terms:Taxonomy"/>
+        <Class IRI="#Taxonomy"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="terms:Thesaurus"/>
+        <Class IRI="#Thesaurus"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="terms:Vocabulary"/>
+        <Class IRI="#Vocabulary"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="terms:defines"/>
+        <ObjectProperty IRI="#defines"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="terms:drawsFrom"/>
+        <ObjectProperty IRI="#drawsFrom"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="terms:expresses"/>
+        <ObjectProperty IRI="#expresses"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="terms:subConceptOf"/>
+        <ObjectProperty IRI="#subConceptOf"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="terms:code"/>
+        <DataProperty IRI="#code"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="terms:codeSystem"/>
+        <DataProperty IRI="#codeSystem"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="terms:displayName"/>
+        <DataProperty IRI="#codeSystemName"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="terms:uri"/>
+        <DataProperty IRI="#displayName"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="terms:valueSet"/>
+        <DataProperty IRI="#uri"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#valueSet"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="https://www.hl7.org/oid"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="http://edu.mayo.cts2/terms-metamodel/omg/spec/CTS2#EntityReference"/>
-        <Class abbreviatedIRI="terms:Symbolic"/>
+        <Class IRI="#Symbolic"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://edu.mayo.cts2/terms-metamodel/omg/spec/CTS2#NameAndMeaningReference"/>
-        <Class abbreviatedIRI="terms:Symbolic"/>
+        <Class IRI="#Symbolic"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://edu.mayo.cts2/terms-metamodel/omg/spec/CTS2#NameOrURI"/>
-        <Class abbreviatedIRI="terms:Symbolic"/>
+        <Class IRI="#Symbolic"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://edu.mayo.cts2/terms-metamodel/omg/spec/CTS2#ValueSet"/>
@@ -109,95 +112,102 @@
         <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:AtomicConceptDescriptor"/>
-        <Class abbreviatedIRI="terms:ConceptDescriptor"/>
+        <Class IRI="#AtomicConceptDescriptor"/>
+        <Class IRI="#ConceptDescriptor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:CompositeConceptDescriptor"/>
-        <Class abbreviatedIRI="terms:ConceptDescriptor"/>
+        <Class IRI="#CompositeConceptDescriptor"/>
+        <Class IRI="#ConceptDescriptor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:ConceptCode"/>
-        <Class abbreviatedIRI="terms:ConceptDescriptor"/>
+        <Class IRI="#ConceptCode"/>
+        <Class IRI="#ConceptDescriptor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:ConceptCode"/>
+        <Class IRI="#ConceptCode"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:ConceptDescriptor"/>
-        <Class abbreviatedIRI="terms:Symbolic"/>
+        <Class IRI="#ConceptDescriptor"/>
+        <Class IRI="#Symbolic"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:ConceptDescriptor"/>
+        <Class IRI="#ConceptDescriptor"/>
         <DataExactCardinality cardinality="1">
-            <DataProperty abbreviatedIRI="terms:code"/>
+            <DataProperty IRI="#code"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:ConceptDescriptor"/>
+        <Class IRI="#ConceptDescriptor"/>
         <DataExactCardinality cardinality="1">
-            <DataProperty abbreviatedIRI="terms:codeSystem"/>
+            <DataProperty IRI="#codeSystem"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:ConceptDescriptor"/>
+        <Class IRI="#ConceptDescriptor"/>
         <DataMaxCardinality cardinality="1">
-            <DataProperty abbreviatedIRI="terms:displayName"/>
+            <DataProperty IRI="#codeSystemName"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:ConceptDescriptor"/>
+        <Class IRI="#ConceptDescriptor"/>
         <DataMaxCardinality cardinality="1">
-            <DataProperty abbreviatedIRI="terms:uri"/>
+            <DataProperty IRI="#displayName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConceptDescriptor"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#uri"/>
             <Datatype abbreviatedIRI="xsd:anyURI"/>
         </DataMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:ConceptDescriptor"/>
+        <Class IRI="#ConceptDescriptor"/>
         <DataMaxCardinality cardinality="1">
-            <DataProperty abbreviatedIRI="terms:valueSet"/>
+            <DataProperty IRI="#valueSet"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:ExtensionalConceptDescriptor"/>
-        <Class abbreviatedIRI="terms:CompositeConceptDescriptor"/>
+        <Class IRI="#ExtensionalConceptDescriptor"/>
+        <Class IRI="#CompositeConceptDescriptor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:IntensionalConceptDescriptor"/>
-        <Class abbreviatedIRI="terms:CompositeConceptDescriptor"/>
+        <Class IRI="#IntensionalConceptDescriptor"/>
+        <Class IRI="#CompositeConceptDescriptor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:MultiTaxonomy"/>
-        <Class abbreviatedIRI="terms:Taxonomy"/>
+        <Class IRI="#MultiTaxonomy"/>
+        <Class IRI="#Taxonomy"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:MultiTaxonomy"/>
-        <Class abbreviatedIRI="terms:Thesaurus"/>
+        <Class IRI="#MultiTaxonomy"/>
+        <Class IRI="#Thesaurus"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:Ontology"/>
-        <Class abbreviatedIRI="terms:MultiTaxonomy"/>
+        <Class IRI="#Ontology"/>
+        <Class IRI="#MultiTaxonomy"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:Taxonomy"/>
-        <Class abbreviatedIRI="terms:Vocabulary"/>
+        <Class IRI="#Taxonomy"/>
+        <Class IRI="#Vocabulary"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:Thesaurus"/>
-        <Class abbreviatedIRI="terms:Vocabulary"/>
+        <Class IRI="#Thesaurus"/>
+        <Class IRI="#Vocabulary"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="terms:Vocabulary"/>
+        <Class IRI="#Vocabulary"/>
         <Class IRI="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression"/>
-        <Class abbreviatedIRI="terms:Symbolic"/>
+        <Class IRI="#Symbolic"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -212,91 +222,99 @@
         <Class IRI="http://edu.mayo.cts2/terms-metamodel/omg/spec/CTS2#Entity"/>
     </SubClassOf>
     <SubObjectPropertyOf>
-        <ObjectProperty abbreviatedIRI="terms:defines"/>
+        <ObjectProperty IRI="#defines"/>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#hasInterpretant"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty abbreviatedIRI="terms:expresses"/>
+        <ObjectProperty IRI="#expresses"/>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#hasInterpretant"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty abbreviatedIRI="terms:subConceptOf"/>
+        <ObjectProperty IRI="#subConceptOf"/>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#broaderTransitive"/>
     </SubObjectPropertyOf>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI="terms:defines"/>
+        <ObjectProperty IRI="#defines"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI="terms:drawsFrom"/>
+        <ObjectProperty IRI="#drawsFrom"/>
         <Class IRI="http://edu.mayo.cts2/terms-metamodel/omg/spec/CTS2#ValueSet"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI="terms:expresses"/>
+        <ObjectProperty IRI="#expresses"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI="terms:subConceptOf"/>
+        <ObjectProperty IRI="#subConceptOf"/>
         <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="terms:defines"/>
+        <ObjectProperty IRI="#defines"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Meaning"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="terms:drawsFrom"/>
+        <ObjectProperty IRI="#drawsFrom"/>
         <Class IRI="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="terms:expresses"/>
+        <ObjectProperty IRI="#expresses"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Meaning"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="terms:subConceptOf"/>
+        <ObjectProperty IRI="#subConceptOf"/>
         <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="terms:code"/>
-        <Class abbreviatedIRI="terms:ConceptDescriptor"/>
+        <DataProperty IRI="#code"/>
+        <Class IRI="#ConceptDescriptor"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="terms:codeSystem"/>
-        <Class abbreviatedIRI="terms:ConceptDescriptor"/>
+        <DataProperty IRI="#codeSystem"/>
+        <Class IRI="#ConceptDescriptor"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="terms:displayName"/>
-        <Class abbreviatedIRI="terms:ConceptDescriptor"/>
+        <DataProperty IRI="#codeSystemName"/>
+        <Class IRI="#ConceptDescriptor"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="terms:uri"/>
-        <Class abbreviatedIRI="terms:ConceptDescriptor"/>
+        <DataProperty IRI="#displayName"/>
+        <Class IRI="#ConceptDescriptor"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="terms:valueSet"/>
-        <Class abbreviatedIRI="terms:ConceptDescriptor"/>
+        <DataProperty IRI="#uri"/>
+        <Class IRI="#ConceptDescriptor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#valueSet"/>
+        <Class IRI="#ConceptDescriptor"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="http://www.w3.org/2004/02/skos/core#notation"/>
         <Class IRI="http://edu.mayo.cts2/terms-metamodel/omg/spec/CTS2#Entity"/>
     </DataPropertyDomain>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="terms:code"/>
+        <DataProperty IRI="#code"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="terms:codeSystem"/>
+        <DataProperty IRI="#codeSystem"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="terms:displayName"/>
+        <DataProperty IRI="#codeSystemName"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="terms:uri"/>
+        <DataProperty IRI="#displayName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#uri"/>
         <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="terms:valueSet"/>
+        <DataProperty IRI="#valueSet"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
