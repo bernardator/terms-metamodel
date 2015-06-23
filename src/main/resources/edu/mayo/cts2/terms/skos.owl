@@ -222,8 +222,8 @@
         <ObjectProperty abbreviatedIRI="skos:hasTopConcept"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty abbreviatedIRI="skos:memberOf"/>
         <ObjectProperty abbreviatedIRI="skos:member"/>
+        <ObjectProperty abbreviatedIRI="skos:memberOf"/>
     </InverseObjectProperties>
     <FunctionalObjectProperty>
         <ObjectProperty abbreviatedIRI="skos:memberList"/>
@@ -291,10 +291,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="skos:memberOf"/>
-        <ObjectUnionOf>
-            <Class abbreviatedIRI="skos:Collection"/>
-            <Class abbreviatedIRI="skos:Concept"/>
-        </ObjectUnionOf>
+        <Class IRI="http://edu.mayo.cts2/terms-metamodel/terms#Member"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="skos:narrowMatch"/>
@@ -358,10 +355,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="skos:member"/>
-        <ObjectUnionOf>
-            <Class abbreviatedIRI="skos:Collection"/>
-            <Class abbreviatedIRI="skos:Concept"/>
-        </ObjectUnionOf>
+        <Class IRI="http://edu.mayo.cts2/terms-metamodel/terms#Member"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="skos:memberList"/>

@@ -41,6 +41,9 @@
         <Class IRI="#IntensionalConceptDescriptor"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Member"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MultiTaxonomy"/>
     </Declaration>
     <Declaration>
@@ -210,8 +213,16 @@
         <Class IRI="#Symbolic"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <Class IRI="#Member"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
         <Class IRI="http://edu.mayo.cts2/terms-metamodel/omg/spec/CTS2#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <Class IRI="#Member"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
